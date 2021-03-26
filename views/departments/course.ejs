@@ -1,0 +1,40 @@
+<%- include("partials/header")%>
+        <div class="container">
+                <div id="home" class="jumbotron">
+                <h1 id="good" class="text-center">List Of Courses</h1>
+                <a class="btn btn-success btn-lg"href="/departments/new">Add a new Course</a>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12">
+                <table
+                border="1"
+                cellpadding="10">
+                        <tr>
+                           <th>Subject Name</th>
+                           <th>Subject Code</th>
+                           <th>Faculty name</th>
+                           <th>Edit</th>
+                           <th>Delete</th>
+                        </tr>
+                <% for(var i=0 ; i < thiscourses.length ; i++){ %>
+                        <tr>
+                        <td><%=thiscourses[i].name %></td>
+                        <td><%=thiscourses[i].code%></td>
+                        <td><%=thiscourses[i].faculty%></td>
+                        <td><a class="btn btn-success" href="/departments/<%=thiscourses[i]._id%>/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                        <td>
+                                <form action="/departments/<%=thiscourses[i]._id%>?_method=DELETE" method="POST">
+                                        <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </form>
+                        </td>
+                        </tr>
+                <% } %>
+        </table>
+        </div>
+        </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <%- include("partials/footer")%>
+

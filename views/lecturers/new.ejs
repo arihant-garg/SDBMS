@@ -1,0 +1,29 @@
+<%- include("partials/header")%>
+<div style="width: 500px; background-color: whitesmoke; border-radius: 50px; margin-top: 100px;" class="container">
+        <form id="form-new" action="/lecturers" method="POST">
+            <h1 class="h3 mb-3 font-weight-normal text-center">NEW FACULTY</h1>
+            <div class="form-label-group">
+            <label class="form-label"for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="lecturerName" required="required">
+            </div>
+            <div class="form-label-group">
+                <label class="form-label" for="qualification">Qualification</label>
+                <input class="form-control" type="text" name="qualification" id="lecturerQualification" required="required">
+                </div>
+                <div class="form-label-group">
+                    <label class="form-label" for="branch">Branch</label>
+                    <input class="form-control" type="text" name="branch" id="lecturerBranch" required="required">
+                    </div>
+                    <div class="form-label-group">
+                        <label class="form-label" for="teachingExperience">Teaching Experience</label>
+                        <input class="form-control" type="text" name="teachingExperience" id="lecturerTeachingExperience" required="required">
+                        </div>
+                    <div class="mb-3">
+                <button id="new2" class="btn btn-success">ADD FACULTY</button>
+            </div>
+        </form>
+           </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<%- include("partials/footer")%>

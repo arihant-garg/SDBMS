@@ -1,0 +1,28 @@
+<%- include("partials/header")%>
+<div id="newcon"class="container">
+    <div id="newter"class="row">
+        <div class="col-12">
+            <h1 class="text-center">EDIT DETAILS</h1>
+        <form action="/departments/<%=department._id%>?_method=PUT" method="POST">
+            <div class="form-label-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" name="department[name]" id="departmentName" value="<%=department.name%>" required="required">
+            </div class="form-label-group">
+            <div>
+                <label class="form-label"for="strength">Strength</label>
+                <input class="form-control"type="text" name="department[strength]" id="departmentStrength"value="<%=department.strength%>" required="required">
+                </div>
+                <div class="form-label-group">
+                    <label class="form-label"for="hod">HOD Name</label>
+                    <input class="form-control"type="text" name="department[hod]" id="departmenthod" value="<%=department.hod%>" required="required">
+                    </div>
+                <button id="new" class="btn btn-success">SUBMIT</button>
+        </form>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <%- include("partials/footer")%>

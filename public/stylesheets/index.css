@@ -1,0 +1,127 @@
+#newcon{
+  margin-top: 226px;
+}
+body {
+  background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=841&q=80") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+#newter{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+body {
+    overflow-x: hidden;
+  }
+.header-1{
+      font-weight: 900;
+      font-size: 60px;
+      font-family: 'Fredoka One', cursive;
+  }
+#tok{
+      background-color: white;
+      margin-bottom: 50px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 50px;
+  }
+#success{
+    padding: 20px;
+    border: 10px 10px 10px black;
+}
+#former{
+    display: inline;
+}
+.jumbotron{
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+#good{
+    font-family: 'Fredoka One', cursive;
+}
+#new{
+    margin-top: 20px;
+}
+#new2{
+    margin-top: 20px;
+}
+.navbar-brand{
+    font-weight: 900;
+}
+.dashboard{
+    padding: 20px;
+}
+#form-new{
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 12%;
+}
+#form-new .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+#form-new .form-control:focus {
+  z-index: 2;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 12%;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="text"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .alert{
+      margin: 30px;
+  }
+  .header-2{
+      font-size: 30px;
+  }
+  table{
+      width: 100%;
+      margin-bottom: 25px;
+  }
+  th, td{
+    padding: 15px;
+  }
+  #register{
+    padding: 20px;
+    width: 500px;
+    background: white;
+    margin-top: 10%;
+    border-radius: 50px;
+  }

@@ -1,0 +1,42 @@
+<%- include("partials/header")%>
+        <div class="container">
+                <div id="home" class="jumbotron">
+                <h1 id="good" class="text-center">List Of Departments</h1>
+                <a class="btn btn-success btn-lg"href="/departments/new">Add a new Department</a>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12">
+                <table
+                border="2"
+                cellpadding="10">
+                        <tr>
+                           <th>Department Name</th>
+                           <th>Department Strength</th>
+                           <th>HOD name</th>
+                           <th>Edit</th>
+                           <th>Delete</th>
+                           <th>Courses</th>
+                        </tr>
+                <% for(var i=0 ; i < thisdepartments.length ; i++){ %>
+                        <tr>
+                        <td><%=thisdepartments[i].name %></td>
+                        <td><%=thisdepartments[i].strength%></td>
+                        <td><%=thisdepartments[i].hod%></td>
+                        <td><a class="btn btn-success" href="/departments/<%=thisdepartments[i]._id%>/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                        <td>
+                                <form action="/departments/<%=thisdepartments[i]._id%>?_method=DELETE" method="POST">
+                                        <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </form>
+                        </td>
+                        <td><a class="btn btn-info" href="/departments/<%=thisdepartments[i]._id%>"><i class="fa fa-bookmark" aria-hidden="true"></i></a></td>
+                        </tr>
+                <% } %>
+        </table>
+        </div>
+        </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <%- include("partials/footer")%>
+
